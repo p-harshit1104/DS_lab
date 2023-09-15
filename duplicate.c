@@ -14,13 +14,20 @@ int main ()
     {   printf (" arr[%d] = ", i);  
         scanf (" %d", &arr[i]);  
     }  
+    int c=0;
+    printf("duplicate elements in array are:-");
     for(i=0;i<num;i++){
         for(j=i+1;j<num;j++){
             if(arr[i]==arr[j]){
-                printf("%d",arr[j]);
-                printf("\n");
+                
+                printf("%d,",arr[j]);
+                c++;
+                
             }
+            
+            
         }
 
     }
+    printf("count=%d",c);
 }
