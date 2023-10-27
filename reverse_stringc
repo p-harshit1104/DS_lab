@@ -1,0 +1,23 @@
+#include<stdio.h>
+int item,a[100],top=-1;
+int push(char item){
+    top++;
+    a[top]=item;
+}
+void display(){
+    int i;
+    for(i = top; a[i] != '\0'; i--){
+        printf("%c",a[i]);
+    }
+}
+int main(){
+    int i;
+    char c[100];
+    printf("enter the character:\n");
+    gets(c);
+    for(i=0;c[i]!='\0';i++){
+        push(c[i]);
+    }
+    printf("the reversal of string\n");
+    display();
+}
